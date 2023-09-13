@@ -34,16 +34,16 @@ public class Funcionario {
     }
 
     public float getSalario() {
-        return salario;
+        return this.salario;
     }
 
     // Método para calcular o salário anual
     public float getSalarioAnual() {
-        return salario * 12;
+        return this.salario * 12;
     }
 
     // Método para conceder aumento
     public void concederAumento(float valorAumento) {
-        salario += valorAumento;
+        this.salario *= 1 + (valorAumento /100);
     }
 }
